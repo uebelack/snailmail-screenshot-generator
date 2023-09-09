@@ -14,7 +14,7 @@
 
 <h3 align="center">Snailmail Screenshot Generator</h3>
   <p align="center">
-    Generator based on React and Cypress to generate nice App Store screenshots for my [Letter app](https://snailmail-screenshot-generator).
+    Generator based on React and Cypress to generate nice App Store screenshots for my [Letter app](https://briefe.app).
   </p>
 </div>
 
