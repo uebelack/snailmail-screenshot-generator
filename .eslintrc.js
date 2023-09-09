@@ -11,9 +11,10 @@ module.exports = {
     'react/require-default-props': 'off',
   },
   extends: ['airbnb'],
-  plugins: ['jest'],
+  plugins: ['jest', 'cypress'],
   env: {
     browser: true,
     'jest/globals': true,
+    'cypress/globals': true,
   },
 };
