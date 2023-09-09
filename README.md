@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Build][build-shield]][build-url]
+[![Language][language-shield]][build-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Available Scripts
 
-In the project directory, you can run:
+<br />
+<div align="center">
+  <a href="https://github.com/uebelack/snailmail-screenshot-generator">
+    <img src="public/logo.svg" alt="Logo" width="80" height="80">
+  </a>
 
-### `npm start`
+<h3 align="center">Snailmail Screenshot Generator</h3>
+  <p align="center">
+    Generator based on React and Cypress to generate nice App Store screenshots for my [Letter app](https://snailmail-screenshot-generator).
+  </p>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* [React](https://react.dev/)
+* [Cypress](https://www.cypress.io/)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
 
-### `npm run build`
+MIT License. See `LICENSE.txt` for more information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[build-shield]: https://img.shields.io/github/workflow/status/uebelack/snailmail-screenshot-generator/Build.svg?style=for-the-badge
+[build-url]: https://github.com/uebelack/snailmail-screenshot-generator/actions/workflows/ci.yaml
+[language-shield]: https://img.shields.io/github/languages/top/uebelack/snailmail-screenshot-generator.svg?style=for-the-badge
+[language-url]: https://github.com/uebelack/snailmail-screenshot-generator
+[coverage-shield]: https://img.shields.io/coveralls/github/uebelack/snailmail-screenshot-generator.svg?style=for-the-badge
+[coverage-url]: https://coveralls.io/github/uebelack/snailmail-screenshot-generator
+[license-shield]: https://img.shields.io/github/license/uebelack/snailmail-screenshot-generator.svg?style=for-the-badge
+[license-url]: https://github.com/uebelack/snailmail-screenshot-generator/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/david-übelacker-600262222
