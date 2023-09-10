@@ -14,8 +14,11 @@ describe('screenshots', () => {
           const url = `${BASE_URL}/screens/${device.key}/${screen.key}/${language}`;
           cy.visit(url);
 
-          const filename = `${language}/${index + 1}_${device.fastlaneKey}_${index + 1}`;
-          cy.screenshot(filename, { overwrite: true, capture: 'viewport' });
+          device.fastlaneKeys.forEach((fastlaneKey) => {
+            const filename = `${language}/${index + 1}_${fastlaneKey}_${index + 1}`;
+            cy.wait(500);
+            cy.screenshot(filename, { overwrite: true, capture: 'viewport' });
+          });
         });
       });
     });
