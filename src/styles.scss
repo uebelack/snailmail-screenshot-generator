@@ -1,0 +1,456 @@
+body {
+  margin: 0;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 300;
+}
+
+.device h2 {
+  margin: 10px;
+}
+
+.device .language {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+iframe {
+  margin: 10px;
+  border: none;
+}
+
+.screen {
+  background: #0080FC;
+  color: white;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.features-sidebyside {
+  display: flex;
+  
+  .features {
+    flex: 1 1 0;
+    width: 0;
+  }
+}
+
+.features-title {
+  text-align: center;
+}
+
+.feature {
+  display: flex;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+  margin-bottom: 60px;
+}
+
+.feature-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.iphone67 {
+  .teaser {
+    display: flex;
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .overview {
+    .teaser {
+      height: 300px;
+    }
+
+    .mock {
+      width: 550px;
+      position: absolute;
+      left: 0px;
+      top: 400px;
+      transform: rotate(10deg);
+    }
+
+    .screenshot {
+      width: 496px;
+      position: absolute;
+      left: 26px;
+      top: 424px;
+      border-radius: 20px;
+      transform: rotate(10deg);
+    }
+  }
+
+  .detail {
+    .teaser {
+      height: 300px;
+    }
+
+    .mock {
+      width: 550px;
+      position: absolute;
+      left: 48px;
+      top: 200px;
+    }
+
+    .screenshot {
+      width: 496px;
+      position: absolute;
+      left: 76px;
+      top: 224px;
+      border-radius: 20px;
+    }
+  }
+
+  .edit {
+    .teaser {
+      height: 300px;
+    }
+
+    .mock {
+      width: 550px;
+      position: absolute;
+      left: 48px;
+      top: 400px;
+    }
+
+    .screenshot {
+      width: 496px;
+      position: absolute;
+      left: 76px;
+      top: 424px;
+      border-radius: 20px;
+    }
+  }
+
+  .features-title {
+    font-size: 58px;
+    font-weight: 400;
+    margin: 40px 0 20px;
+  }
+  
+  .features {
+    padding: 20px;
+  }
+  
+  .feature {
+    margin-top: 40px;
+    padding-right: 5px;
+  }
+  
+  .feature-icon {
+    font-size: 70px;
+    min-width: 100px;
+    padding-top: 20px;
+  }
+  
+  .feature-details {
+    margin-left: 40px;
+  }
+  
+  .feature-title {
+    font-weight: 400;
+    font-size: 38px;
+    margin-bottom: 5px;
+  }
+  
+  .feature-description {
+    font-size: 34px;
+  }
+}
+
+.iphone55 {
+  .teaser {
+    display: flex;
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .overview {
+    .teaser {
+      height: 300px;
+    }
+
+    .mock {
+      width: 550px;
+      position: absolute;
+      left: -20px;
+      top: 400px;
+      transform: rotate(10deg);
+    }
+
+    .screenshot {
+      width: 471px;
+      position: absolute;
+      left: 20px;
+      top: 535px;
+      transform: rotate(10deg);
+    }
+  }
+
+  .detail {
+    .teaser {
+      height: 300px;
+    }
+
+    .mock {
+      width: 500px;
+      position: absolute;
+      left: 58px;
+      top: 60px;
+    }
+
+    .screenshot {
+      width: 428px;
+      position: absolute;
+      left: 95px;
+      top: 182px;
+    }
+  }
+
+  .edit {
+    .teaser {
+      height: 300px;
+    }
+
+    .mock {
+      width: 500px;
+      position: absolute;
+      left: 58px;
+      top: 360px;
+    }
+
+    .screenshot {
+      width: 428px;
+      position: absolute;
+      left: 95px;
+      top: 482px;
+    }
+  }
+
+  .features-title {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 30px 20px 0;
+  }
+  
+  .features {
+    padding: 15px;
+  }
+  
+  .feature {
+    margin-top: 20px;
+  }
+  
+  .feature-icon {
+    font-size: 60px;
+    min-width: 100px;
+    padding-top: 20px;
+  }
+  
+  .feature-details {
+    margin-left: 20px;
+  }
+  
+  .feature-title {
+    font-weight: 400;
+    font-size: 34px;
+    margin-bottom: 5px;
+  }
+  
+  .feature-description {
+    font-size: 32px;
+  }
+}
+
+.ipad129 {
+  .teaser {
+    font-size: 50px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 1000px;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+  }
+
+  .overview {
+    .teaser {
+      height: 200px;
+    }
+
+    .mock {
+      width: 1000px;
+      position: absolute;
+      right: 50px;
+      top: 300px;
+    }
+
+    .screenshot {
+      width: 934px;
+      position: absolute;
+      left: 349px;
+      top: 333px;
+    }
+  }
+
+  .edit {
+    .teaser {
+      height: 200px;
+    }
+
+    .mock {
+      width: 1000px;
+      position: absolute;
+      right: 50px;
+      top: 300px;
+    }
+
+    .screenshot {
+      width: 934px;
+      position: absolute;
+      left: 349px;
+      top: 333px;
+    }
+  }
+
+  .features-sidebyside {
+    padding: 10px;
+  }  
+
+  .features-title {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 40px 20px 15px;
+  }
+  
+  .features {
+    padding: 10px;
+  }
+  
+  .feature {
+    margin-top: 30px;
+  }
+  
+  .feature-icon {
+    font-size: 60px;
+    min-width: 90px;
+    padding-top: 20px;
+  }
+  
+  .feature-details {
+    margin-left: 30px;
+  }
+  
+  .feature-title {
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+  
+  .feature-description {
+    font-size: 30px;
+  }
+}
+
+.mac {
+  .teaser {
+    font-size: 50px;
+    width: 1000px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+  }
+
+  .overview {
+    .mock {
+      width: 1000px;
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+    }
+
+    .screenshot {
+      width: 700px;
+      position: absolute;
+      left: 540px;
+      top: 265px;
+    }
+  }
+
+  .edit {
+    .mock {
+      width: 1000px;
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+    }
+
+    .screenshot {
+      width: 700px;
+      position: absolute;
+      left: 540px;
+      top: 265px;
+    }
+  }
+
+  .features-sidebyside {
+    padding: 10px;
+  }  
+
+  .features-title {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 20px 20px 0px;
+  }
+  
+  .features {
+    padding: 10px;
+  }
+  
+  .feature {
+    margin-top: 30px;
+  }
+  
+  .feature-icon {
+    font-size: 60px;
+    min-width: 90px;
+    padding-top: 20px;
+  }
+  
+  .feature-details {
+    margin-left: 30px;
+  }
+  
+  .feature-title {
+    font-weight: 400;
+    font-size: 34px;
+    margin-bottom: 5px;
+  }
+  
+  .feature-description {
+    font-size: 30px;
+  }
+}
