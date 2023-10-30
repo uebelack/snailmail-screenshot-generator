@@ -311,6 +311,58 @@ const translations = {
       }],
     },
   },
+  'pt-PT': {
+    overview: 'Crie e imprima cartas perfeitamente formatadas em pouco tempo.',
+    edit: 'Editor minimalista, para que possa focar no conteúdo.',
+    features: {
+      title: 'Funcionalidades',
+      features: [{
+        title: 'Formatação Automática',
+        description: 'As cartas são automaticamente formatadas de forma profissional',
+        icon: 'align-justify',
+      }, {
+        title: 'Imprimir',
+        description: 'Imprima facilmente as suas cartas diretamente a partir da aplicação',
+        icon: 'print',
+      }, {
+        title: 'Partilhar e Exportar',
+        description: 'Partilhe as suas cartas digitalmente ou exporte-as como ficheiros PDF',
+        icon: 'arrow-up-right-from-square',
+      }, {
+        title: 'Pesquisa',
+        description: 'A função de pesquisa facilita a localização rápida e conveniente de cartas',
+        icon: 'magnifying-glass',
+      }, {
+        title: 'Armazenamento',
+        description: 'As suas cartas são sincronizadas entre dispositivos através do iCloud',
+        icon: 'cloud',
+      }],
+    },
+    proFeatures: {
+      title: 'Funcionalidades PRO',
+      features: [{
+        title: 'Assinaturas',
+        description: 'Adicione assinaturas pessoais diretamente na aplicação',
+        icon: 'signature',
+      }, {
+        title: 'Remetente',
+        description: 'Introduza as informações do remetente uma vez',
+        icon: 'address-card',
+      }, {
+        title: 'Contactos',
+        description: 'Incorpore facilmente endereços de contactos da sua lista de contactos',
+        icon: 'address-book',
+      }, {
+        title: 'Modelos',
+        description: 'Utilize uma ampla gama de modelos para diversas ocasiões',
+        icon: 'file-lines',
+      }, {
+        title: 'Layout',
+        description: 'Personalize o layout das suas cartas de acordo com as suas necessidades específicas',
+        icon: 'gear',
+      }],
+    },
+  },
 };
 
 export default translations;
