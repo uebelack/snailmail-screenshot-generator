@@ -6,7 +6,7 @@ function Overview({ language }) {
   return (
     <div className="overview">
       <div className="teaser">{translations[language].overview}</div>
-      <img className="screenshot" alt="screenshot" src={`/raw/${language}/iPhone 14-01_overview.png`} />
+      <img className="screenshot" alt="screenshot" src={`/raw/${language}/iPhone 15-01_overview.png`} />
       <img className="mock" alt="iphone67" src="/iphone67.png" />
     </div>
   );

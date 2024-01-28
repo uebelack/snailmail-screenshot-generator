@@ -20,12 +20,12 @@ import MacFeatures from './components/mac/Features';
 
 const config = {
   languages: [
-    // 'en-US',
-    // 'nl-NL',
-    // 'it-IT',
-    // 'es-ES',
-    // 'fr-FR',
-    // 'de-DE',
+    'en-US',
+    'nl-NL',
+    'it-IT',
+    'es-ES',
+    'fr-FR',
+    'de-DE',
     'pt-PT',
   ],
   devices: [
