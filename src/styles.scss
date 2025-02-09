@@ -165,112 +165,6 @@ iframe {
   }
   
   .feature-description {
-    font-size: 34px;
-  }
-}
-
-.iphone55 {
-  .teaser {
-    display: flex;
-    font-size: 50px;
-    padding: 50px;
-    text-align: center;
-    align-items: center;
-  }
-
-  .overview {
-    .teaser {
-      height: 300px;
-    }
-
-    .mock {
-      width: 550px;
-      position: absolute;
-      left: -20px;
-      top: 400px;
-      transform: rotate(10deg);
-    }
-
-    .screenshot {
-      width: 471px;
-      position: absolute;
-      left: 20px;
-      top: 535px;
-      transform: rotate(10deg);
-    }
-  }
-
-  .detail {
-    .teaser {
-      height: 300px;
-    }
-
-    .mock {
-      width: 500px;
-      position: absolute;
-      left: 58px;
-      top: 60px;
-    }
-
-    .screenshot {
-      width: 428px;
-      position: absolute;
-      left: 95px;
-      top: 182px;
-    }
-  }
-
-  .edit {
-    .teaser {
-      height: 300px;
-    }
-
-    .mock {
-      width: 500px;
-      position: absolute;
-      left: 58px;
-      top: 360px;
-    }
-
-    .screenshot {
-      width: 428px;
-      position: absolute;
-      left: 95px;
-      top: 482px;
-    }
-  }
-
-  .features-title {
-    font-size: 50px;
-    font-weight: 400;
-    margin: 30px 20px 0;
-  }
-  
-  .features {
-    padding: 15px;
-  }
-  
-  .feature {
-    margin-top: 20px;
-  }
-  
-  .feature-icon {
-    font-size: 60px;
-    min-width: 100px;
-    padding-top: 20px;
-  }
-  
-  .feature-details {
-    margin-left: 20px;
-  }
-  
-  .feature-title {
-    font-weight: 400;
-    font-size: 34px;
-    margin-bottom: 5px;
-  }
-  
-  .feature-description {
     font-size: 32px;
   }
 }
@@ -337,7 +231,7 @@ iframe {
   .features-title {
     font-size: 50px;
     font-weight: 400;
-    margin: 40px 20px 15px;
+    margin: 25px 20px 10px;
   }
   
   .features {
@@ -345,7 +239,7 @@ iframe {
   }
   
   .feature {
-    margin-top: 30px;
+    margin-top: 25px;
   }
   
   .feature-icon {
@@ -360,12 +254,12 @@ iframe {
   
   .feature-title {
     font-weight: 400;
-    font-size: 36px;
+    font-size: 34px;
     margin-bottom: 5px;
   }
   
   .feature-description {
-    font-size: 30px;
+    font-size: 27px;
   }
 }
 

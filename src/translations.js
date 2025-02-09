@@ -29,6 +29,10 @@ const translations = {
     proFeatures: {
       title: 'PRO Features',
       features: [{
+        title: 'AI Assitant',
+        description: 'Refine or create professional letters with the AI Assitant',
+        icon: 'wand-magic-sparkles',
+      }, {
         title: 'Signatures',
         description: 'Add personal signatures directly within the app',
         icon: 'signature',
@@ -81,6 +85,10 @@ const translations = {
     proFeatures: {
       title: 'PRO Funktionen',
       features: [{
+        title: 'KI-Assistent',
+        description: 'Verbessern oder erstellen Sie professionelle Briefe mit dem KI-Assistenten',
+        icon: 'wand-magic-sparkles',
+      }, {
         title: 'Unterschriften',
         description: 'Fügen Sie persönliche Unterschriften direkt in der App hinzu',
         icon: 'signature',
@@ -133,6 +141,10 @@ const translations = {
     proFeatures: {
       title: 'PRO Functies',
       features: [{
+        title: 'AI-assistent',
+        description: 'Verfijn of creëer professionele brieven met de AI-assistent',
+        icon: 'wand-magic-sparkles',
+      }, {
         title: 'Handtekeningen',
         description: 'Voeg persoonlijke handtekeningen rechtstreeks toe in de app',
         icon: 'signature',
@@ -185,6 +197,10 @@ const translations = {
     proFeatures: {
       title: 'Fonctionnalités PRO',
       features: [{
+        title: 'Assistant IA',
+        description: 'Affinez ou créez des lettres professionnelles avec l\'assistant IA',
+        icon: 'wand-magic-sparkles',
+      }, {
         title: 'Signatures',
         description: 'Ajoutez des signatures personnelles directement dans l\'application',
         icon: 'signature',
@@ -194,7 +210,7 @@ const translations = {
         icon: 'address-card',
       }, {
         title: 'Contacts',
-        description: 'Intégrez facilement les adresses de vos contacts depuis votre carnet d\'adresses',
+        description: 'Intégrez facilement les adresses de votre carnet de contacts',
         icon: 'address-book',
       }, {
         title: 'Modèles',
@@ -237,6 +253,10 @@ const translations = {
     proFeatures: {
       title: 'Funzionalità PRO',
       features: [{
+        title: 'Assistente IA',
+        description: 'Affina o crea lettere professionali con l\'assistente IA',
+        icon: 'wand-magic-sparkles',
+      }, {
         title: 'Firme',
         description: 'Aggiungi firme personali direttamente dall\'app',
         icon: 'signature',
@@ -289,6 +309,10 @@ const translations = {
     proFeatures: {
       title: 'Funciones PRO',
       features: [{
+        title: 'Asistente IA',
+        description: 'Refina o crea cartas profesionales con el asistente IA',
+        icon: 'wand-magic-sparkles',
+      }, {
         title: 'Firmas',
         description: 'Agrega firmas personales directamente dentro de la aplicación',
         icon: 'signature',
@@ -341,6 +365,10 @@ const translations = {
     proFeatures: {
       title: 'Funcionalidades PRO',
       features: [{
+        title: 'Assistente IA',
+        description: 'Refine ou crie cartas profissionais com o assistente IA',
+        icon: 'wand-magic-sparkles',
+      }, {
         title: 'Assinaturas',
         description: 'Adicione assinaturas pessoais diretamente na aplicação',
         icon: 'signature',

@@ -8,7 +8,6 @@ function Overview({ language }) {
       <div className="teaser">{translations[language].overview}</div>
       <img className="screenshot" alt="screenshot" src={`/raw/${language}/iPad Pro (12.9-inch) (6th generation)-01_overview.png`} />
       <img className="mock" alt="ipad129" src="/ipad129.png" />
-      <img className="logo" alt="logo" src="/logo.svg" />
     </div>
   );
 }
