@@ -185,6 +185,11 @@ iframe {
   }
 
   .overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     .teaser {
       height: 200px;
     }
@@ -192,19 +197,22 @@ iframe {
     .mock {
       width: 1000px;
       position: absolute;
-      right: 50px;
-      top: 300px;
+      top: 342px;
     }
 
     .screenshot {
       width: 934px;
       position: absolute;
-      left: 349px;
-      top: 333px;
+      top: 375px;
     }
   }
 
   .edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     .teaser {
       height: 200px;
     }
@@ -212,15 +220,13 @@ iframe {
     .mock {
       width: 1000px;
       position: absolute;
-      right: 50px;
-      top: 300px;
+      top: 342px;
     }
 
     .screenshot {
       width: 934px;
       position: absolute;
-      left: 349px;
-      top: 333px;
+      top: 375px;
     }
   }
 
