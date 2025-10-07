@@ -12,6 +12,7 @@ function Overview({ language }) {
         src={`/raw/${language}/iPad Air 11-inch (M3)-01_overview.png`}
       />
       <img className="mock" alt="ipad129" src="/ipad129.png" />
+      <div className="border" />
     </div>
   );
 }

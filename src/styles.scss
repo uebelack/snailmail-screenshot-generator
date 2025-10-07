@@ -205,6 +205,17 @@ iframe {
       position: absolute;
       top: 375px;
     }
+
+    .border {
+      width: 228px;
+      height: 70px;
+      position: absolute;
+      top: 484px;
+      left: 224px;
+      border: 5px solid #0083FB;
+      // rounded corners
+      border-radius: 7px;
+    }
   }
 
   .edit {

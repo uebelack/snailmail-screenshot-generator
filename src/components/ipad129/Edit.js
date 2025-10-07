@@ -9,7 +9,7 @@ function Edit({ language }) {
       <img
         className="screenshot"
         alt="screenshot"
-        src={`/raw/${language}/iPad Air 11-inch (M3)-03_edit.png`}
+        src={`/raw/${language}/iPad Air 11-inch (M3)-02_edit.png`}
       />
       <img className="mock" alt="ipad129" src="/ipad129.png" />
     </div>
