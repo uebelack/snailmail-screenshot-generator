@@ -1,8 +1,11 @@
-import { render } from '@testing-library/react';
-import OverviewPage from './OverviewPage';
+import { render } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
+import OverviewPage from "./OverviewPage";
 
-jest.mock('react-router-dom', () => ({ Link: () => (<div />) }));
-
-it('should render', () => {
-  render(<OverviewPage />);
+it("should render", () => {
+  render(
+    <MemoryRouter>
+      <OverviewPage />
+    </MemoryRouter>
+  );
 });
