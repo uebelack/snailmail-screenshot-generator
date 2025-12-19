@@ -7,6 +7,12 @@
 
 # testing
 /coverage
+cypress/**/*.png
+cypress/**/*.jpg
+cypress/**/*.jpeg
+cypress/**/*.gif
+cypress/**/*.svg
+cypress/**/*.webp
 
 # production
 /build
