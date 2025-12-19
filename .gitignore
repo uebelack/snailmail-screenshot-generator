@@ -28,5 +28,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 raw/screenshots.html
+
+# Yarn PnP
+.yarn/cache
 .yarn/unplugged
-/.yarn/install-state.gz
+.yarn/install-state.gz
+.yarn/build-state.yml
+.pnp.*
