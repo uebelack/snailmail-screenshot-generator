@@ -1,3 +1,4 @@
+import { ComponentType } from 'react';
 import Iphone67Overview from './components/iphone67/Overview';
 import Iphone67Detail from './components/iphone67/Detail';
 import Iphone67Edit from './components/iphone67/Edit';
@@ -12,7 +13,27 @@ import MacOverview from './components/mac/Overview';
 import MacEdit from './components/mac/Edit';
 import MacFeatures from './components/mac/Features';
 
-const config = {
+export type LanguageCode = 'en-US' | 'nl-NL' | 'it-IT' | 'es-ES' | 'fr-FR' | 'de-DE' | 'pt-PT';
+
+export interface ScreenConfig {
+  key: string;
+  component: ComponentType<{ language: LanguageCode }>;
+}
+
+export interface DeviceConfig {
+  key: string;
+  fastlaneKeys: string[];
+  width: number;
+  height: number;
+  screens: ScreenConfig[];
+}
+
+export interface Config {
+  languages: LanguageCode[];
+  devices: DeviceConfig[];
+}
+
+const config: Config = {
   languages: [
     'en-US',
     'nl-NL',

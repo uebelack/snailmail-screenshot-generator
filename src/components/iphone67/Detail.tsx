@@ -1,7 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import { LanguageCode } from '../../config';
 
-function Detail({ language }) {
+interface DetailProps {
+  language: LanguageCode;
+}
+
+function Detail({ language }: DetailProps) {
   return (
     <div className="detail">
       <img
@@ -13,9 +16,5 @@ function Detail({ language }) {
     </div>
   );
 }
-
-Detail.propTypes = {
-  language: PropTypes.string.isRequired,
-};
 
 export default Detail;

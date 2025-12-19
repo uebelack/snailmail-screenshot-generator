@@ -7,7 +7,13 @@ import OverviewPage from './pages/OverviewPage';
 
 import './styles.scss';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootElement = document.getElementById('root');
+
+if (!rootElement) {
+  throw new Error('Root element not found');
+}
+
+const root = ReactDOM.createRoot(rootElement);
 
 const router = createBrowserRouter([
   {

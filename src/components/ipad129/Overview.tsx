@@ -1,8 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import { LanguageCode } from '../../config';
 import translations from '../../translations';
 
-function Overview({ language }) {
+interface OverviewProps {
+  language: LanguageCode;
+}
+
+function Overview({ language }: OverviewProps) {
   return (
     <div className="overview">
       <div className="teaser">{translations[language].overview}</div>
@@ -16,9 +19,5 @@ function Overview({ language }) {
     </div>
   );
 }
-
-Overview.propTypes = {
-  language: PropTypes.string.isRequired,
-};
 
 export default Overview;

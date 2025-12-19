@@ -1,8 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import { LanguageCode } from '../../config';
 import translations from '../../translations';
 
-function Edit({ language }) {
+interface EditProps {
+  language: LanguageCode;
+}
+
+function Edit({ language }: EditProps) {
   return (
     <div className="edit">
       <div className="teaser">{translations[language].edit}</div>
@@ -15,9 +18,5 @@ function Edit({ language }) {
     </div>
   );
 }
-
-Edit.propTypes = {
-  language: PropTypes.string.isRequired,
-};
 
 export default Edit;
