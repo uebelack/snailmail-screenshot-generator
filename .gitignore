@@ -16,6 +16,7 @@ cypress/**/*.webp
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
@@ -35,3 +36,6 @@ raw/screenshots.html
 .yarn/install-state.gz
 .yarn/build-state.yml
 .pnp.*
+
+# TS
+*.tsbuildinfo

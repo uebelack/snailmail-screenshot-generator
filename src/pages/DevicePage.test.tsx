@@ -1,8 +1,11 @@
-import { render } from '@testing-library/react';
-import DevicePage from './DevicePage';
+import { render } from "@testing-library/react";
+import { vi } from "vitest";
+import DevicePage from "./DevicePage";
 
-jest.mock('react-router-dom', () => ({ useParams: () => ({ deviceKey: 'iphone67' }) }));
+vi.mock("react-router-dom", () => ({
+  useParams: () => ({ deviceKey: "iphone67" }),
+}));
 
-it('should render', () => {
+it("should render", () => {
   render(<DevicePage />);
 });

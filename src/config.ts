@@ -28,12 +28,16 @@ export interface DeviceConfig {
   screens: ScreenConfig[];
 }
 
-export interface Config {
+export interface ProjectConfig {
   languages: LanguageCode[];
   devices: DeviceConfig[];
 }
 
-const config: Config = {
+export interface Config {
+  projects: ProjectConfig[];
+}
+
+const config: ProjectConfig = {
   languages: [
     'en-US',
     'nl-NL',
