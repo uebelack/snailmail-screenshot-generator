@@ -7,6 +7,18 @@ body {
 // Overview page styles
 .overview-page {
   padding: 20px;
+  min-height: 100vh;
+  transition: background-color 0.2s, color 0.2s;
+
+  &.light {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  &.dark {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+  }
 }
 
 .overview-controls {
@@ -29,8 +41,10 @@ body {
     border: 1px solid #ccc;
     border-radius: 6px;
     background-color: white;
+    color: #333;
     cursor: pointer;
     min-width: 120px;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
 
     &:hover {
       border-color: #999;
@@ -40,6 +54,20 @@ body {
       outline: none;
       border-color: #0080FC;
       box-shadow: 0 0 0 2px rgba(0, 128, 252, 0.2);
+    }
+
+    .dark & {
+      background-color: #2d2d44;
+      border-color: #444;
+      color: #e0e0e0;
+
+      &:hover {
+        border-color: #666;
+      }
+
+      &:focus {
+        border-color: #0080FC;
+      }
     }
   }
 }
@@ -56,6 +84,10 @@ body {
     font-size: 24px;
     font-weight: 400;
     text-transform: capitalize;
+
+    .dark & {
+      color: #e0e0e0;
+    }
   }
 }
 
@@ -69,6 +101,10 @@ body {
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  .dark & {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  }
 }
 
 .overview-screen-scaled {

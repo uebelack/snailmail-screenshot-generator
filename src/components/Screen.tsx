@@ -1,4 +1,4 @@
-import config, { LanguageCode } from '../config';
+import config, { LanguageCode } from "../config";
 
 interface ScreenProps {
   deviceKey: string;
@@ -17,7 +17,10 @@ function Screen({ deviceKey, screenKey, language }: ScreenProps) {
   const ScreenComponent = screen.component;
 
   return (
-    <div className={`screen ${device.key}`} style={{ width: device.width / 2, height: device.height / 2 }}>
+    <div
+      className={`screen ${device.key}`}
+      style={{ width: device.width / 2, height: device.height / 2 }}
+    >
       {ScreenComponent ? <ScreenComponent language={language} /> : screenKey}
     </div>
   );

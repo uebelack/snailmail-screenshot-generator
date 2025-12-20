@@ -1,6 +1,6 @@
-import { useParams } from 'react-router-dom';
-import Screen from '../components/Screen';
-import { LanguageCode } from '../config';
+import { useParams } from "react-router-dom";
+import Screen from "../components/Screen";
+import { LanguageCode } from "../config";
 
 function ScreenPage() {
   const { deviceKey, screenKey, language } = useParams();

@@ -15,6 +15,10 @@ import MacFeatures from './components/mac/Features';
 
 export type LanguageCode = 'en-US' | 'nl-NL' | 'it-IT' | 'es-ES' | 'fr-FR' | 'de-DE' | 'pt-PT';
 
+export type ColorScheme = 'light' | 'dark';
+
+export const colorSchemes: ColorScheme[] = ['light', 'dark'];
+
 export interface ScreenConfig {
   key: string;
   component: ComponentType<{ language: LanguageCode }>;

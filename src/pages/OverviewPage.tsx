@@ -1,19 +1,31 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
-import config, { LanguageCode } from "../config";
+import config, { ColorScheme, LanguageCode, colorSchemes } from "../config";
 import Screen from "../components/Screen";
 
 const SCALE_OPTIONS = [0.25, 0.5, 0.75, 1.0];
 const DEFAULT_SCALE = 0.5;
 
+function getSystemColorScheme(): ColorScheme {
+  if (typeof window !== "undefined" && window.matchMedia) {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  }
+  return "light";
+}
+
 function OverviewPage() {
   const [searchParams, setSearchParams] = useSearchParams();
+  const systemColorScheme = useMemo(() => getSystemColorScheme(), []);
 
   const scaleParam = searchParams.get("scale");
   const languageParam = searchParams.get("language");
+  const colorSchemeParam = searchParams.get("colorScheme");
 
   const scale = scaleParam ? parseFloat(scaleParam) : DEFAULT_SCALE;
   const language = (languageParam as LanguageCode) || config.languages[0];
+  const colorScheme = (colorSchemeParam as ColorScheme) || systemColorScheme;
 
   const handleScaleChange = (newScale: string) => {
     const params = new URLSearchParams(searchParams);
@@ -27,8 +39,14 @@ function OverviewPage() {
     setSearchParams(params);
   };
 
+  const handleColorSchemeChange = (newColorScheme: string) => {
+    const params = new URLSearchParams(searchParams);
+    params.set("colorScheme", newColorScheme);
+    setSearchParams(params);
+  };
+
   return (
-    <div className="overview-page">
+    <div className={`overview-page ${colorScheme}`}>
       <div className="overview-controls">
         <label>
           Language:
@@ -57,6 +75,22 @@ function OverviewPage() {
             {SCALE_OPTIONS.map((s) => (
               <option key={s} value={s}>
                 {s * 100}%
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label>
+          Color Scheme:
+          <select
+            value={colorScheme}
+            onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+              handleColorSchemeChange(e.target.value)
+            }
+          >
+            {colorSchemes.map((scheme) => (
+              <option key={scheme} value={scheme}>
+                {scheme.charAt(0).toUpperCase() + scheme.slice(1)}
               </option>
             ))}
           </select>

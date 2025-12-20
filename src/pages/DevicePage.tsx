@@ -1,5 +1,5 @@
-import { useParams } from 'react-router-dom';
-import config from '../config';
+import { useParams } from "react-router-dom";
+import config from "../config";
 
 function DevicePage() {
   const { deviceKey } = useParams();
