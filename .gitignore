@@ -7,9 +7,16 @@
 
 # testing
 /coverage
+cypress/**/*.png
+cypress/**/*.jpg
+cypress/**/*.jpeg
+cypress/**/*.gif
+cypress/**/*.svg
+cypress/**/*.webp
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
@@ -22,3 +29,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 raw/screenshots.html
+
+# Yarn PnP
+.yarn/cache
+.yarn/unplugged
+.yarn/install-state.gz
+.yarn/build-state.yml
+.pnp.*
+
+# TS
+*.tsbuildinfo
