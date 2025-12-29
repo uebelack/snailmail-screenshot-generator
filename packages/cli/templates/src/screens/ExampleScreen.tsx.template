@@ -1,0 +1,27 @@
+import { FeatureList } from '@screegen/components';
+import translations from '../translations';
+import styles from './ExampleScreen.module.scss';
+
+interface ExampleScreenProps {
+  language: string;
+}
+
+function ExampleScreen({ language }: ExampleScreenProps) {
+  const t = translations[language] || translations['en-US'];
+
+  return (
+    <div className={styles.exampleScreen}>
+      <div className={styles.header}>
+        <h1 className={styles.title}>{t.title}</h1>
+        <p className={styles.subtitle}>{t.subtitle}</p>
+      </div>
+      <FeatureList
+        title={t.features.title}
+        features={t.features.features}
+        className={styles.features}
+      />
+    </div>
+  );
+}
+
+export default ExampleScreen;

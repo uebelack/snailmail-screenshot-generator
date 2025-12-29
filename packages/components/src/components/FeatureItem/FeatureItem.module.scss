@@ -1,0 +1,26 @@
+.feature {
+  display: flex;
+}
+
+.featureIcon {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 60px;
+  min-width: 90px;
+  padding-top: 20px;
+}
+
+.featureDetails {
+  margin-left: 30px;
+}
+
+.featureTitle {
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 5px;
+}
+
+.featureDescription {
+  font-size: 28px;
+}

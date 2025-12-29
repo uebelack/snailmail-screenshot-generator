@@ -1,0 +1,30 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+}
+
+.featuresTitle {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 20px 20px 0;
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+  margin-bottom: 60px;
+}
+
+.featuresSidebyside {
+  display: flex;
+
+  .features {
+    flex: 1 1 0;
+    width: 0;
+  }
+}
