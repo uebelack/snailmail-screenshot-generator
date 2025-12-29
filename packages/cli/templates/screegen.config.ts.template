@@ -1,0 +1,31 @@
+import { ProjectConfig } from '@screegen/components';
+import ExampleScreen from './src/screens/ExampleScreen';
+
+// Define your supported languages
+export type AppLanguageCode = 'en-US' | 'de-DE';
+
+const config: ProjectConfig<AppLanguageCode> = {
+  languages: ['en-US', 'de-DE'],
+  devices: [
+    {
+      key: 'iphone67',
+      fastlaneKeys: ['APP_IPHONE_67'],
+      width: 1290,
+      height: 2796,
+      screens: [
+        { key: 'example', component: ExampleScreen },
+      ],
+    },
+    {
+      key: 'ipad129',
+      fastlaneKeys: ['APP_IPAD_PRO_129'],
+      width: 2732,
+      height: 2048,
+      screens: [
+        { key: 'example', component: ExampleScreen },
+      ],
+    },
+  ],
+};
+
+export default config;

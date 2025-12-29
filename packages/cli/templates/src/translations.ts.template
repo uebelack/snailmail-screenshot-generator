@@ -1,0 +1,54 @@
+import { FeatureSection } from '@screegen/components';
+
+export interface Translation {
+  title: string;
+  subtitle: string;
+  features: FeatureSection;
+}
+
+type Translations = {
+  [key: string]: Translation;
+};
+
+const translations: Translations = {
+  'en-US': {
+    title: 'Your App Name',
+    subtitle: 'A brief description of your app',
+    features: {
+      title: 'Features',
+      features: [
+        {
+          title: 'Feature 1',
+          description: 'Description of feature 1',
+          icon: 'star',
+        },
+        {
+          title: 'Feature 2',
+          description: 'Description of feature 2',
+          icon: 'heart',
+        },
+      ],
+    },
+  },
+  'de-DE': {
+    title: 'Dein App Name',
+    subtitle: 'Eine kurze Beschreibung deiner App',
+    features: {
+      title: 'Funktionen',
+      features: [
+        {
+          title: 'Funktion 1',
+          description: 'Beschreibung von Funktion 1',
+          icon: 'star',
+        },
+        {
+          title: 'Funktion 2',
+          description: 'Beschreibung von Funktion 2',
+          icon: 'heart',
+        },
+      ],
+    },
+  },
+};
+
+export default translations;
