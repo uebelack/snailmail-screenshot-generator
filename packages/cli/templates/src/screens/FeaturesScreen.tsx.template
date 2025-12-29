@@ -1,0 +1,22 @@
+import { FeatureList, ScreenComponentProps } from '@screegen/components';
+import translations from '../translations';
+import styles from './FeaturesScreen.module.scss';
+
+function FeaturesScreen({ language, width }: ScreenComponentProps) {
+  const t = translations[language];
+  // Use 2 columns for wide screens (iPad)
+  const columns = width > 2000 ? 2 : 1;
+
+  return (
+    <div className={styles.featuresScreen}>
+      <FeatureList
+        title={t.features.title}
+        features={t.features.features}
+        columns={columns}
+        className={styles.features}
+      />
+    </div>
+  );
+}
+
+export default FeaturesScreen;

@@ -1,0 +1,7 @@
+.featuresScreen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+}

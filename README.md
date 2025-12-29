@@ -1,41 +1,171 @@
-<div id="top"></div>
+# screegen
 
-[![Build][build-shield]][build-url]
-[![Language][language-shield]][build-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+A screenshot generation toolkit for creating App Store screenshots. Build beautiful, localized screenshots for multiple devices with React and Playwright.
 
+## Packages
 
-<br />
-<div align="center">
-  <a href="https://github.com/uebelack/snailmail-screenshot-generator">
-    <img src="public/logo.svg" alt="Logo" width="80" height="80">
-  </a>
+| Package | Description |
+|---------|-------------|
+| [@screegen/components](./packages/components) | Reusable React components for building screenshot layouts |
+| [@screegen/cli](./packages/cli) | CLI tool for scaffolding projects and generating screenshots |
 
-<h3 align="center">Snailmail Screenshot Generator</h3>
-  <p align="center">
-    Generator based on React and Cypress to generate nice App Store screenshots for my [Letter app](https://briefe.app).
-  </p>
-</div>
+## Quick Start
 
-### Built With
+### Create a new project
 
-* [React](https://react.dev/)
-* [Cypress](https://www.cypress.io/)
+```bash
+npx @screegen/cli init -n my-app
+cd my-app
+yarn install
+```
 
+### Development
+
+```bash
+yarn dev
+```
+
+### Generate screenshots
+
+```bash
+npx screegen generate
+```
+
+## Features
+
+- **Multi-device support**: Generate screenshots for iPhone, iPad, Mac, and more
+- **Multi-language**: Built-in support for localized screenshots
+- **Dark mode**: Light and dark color scheme support
+- **Playwright-powered**: Fast, reliable screenshot generation
+- **React-based**: Use familiar React patterns to build screenshot layouts
+- **Fastlane compatible**: Output naming compatible with fastlane deliver
+
+## Project Structure
+
+```
+screegen/
+├── packages/
+│   ├── components/     # @screegen/components - React component library
+│   │   ├── src/
+│   │   │   ├── types/          # TypeScript type definitions
+│   │   │   ├── hooks/          # React hooks (useColorScheme, useUrlState)
+│   │   │   └── components/     # Screen, FeatureList, OverviewGrid, etc.
+│   │   └── package.json
+│   │
+│   └── cli/            # @screegen/cli - Command line tool
+│       ├── src/
+│       │   ├── commands/       # init, generate commands
+│       │   └── templates/      # Project scaffolding templates
+│       └── package.json
+│
+└── package.json        # Root workspace config
+```
+
+## Development
+
+This is a yarn workspaces monorepo.
+
+```bash
+# Install dependencies
+yarn install
+
+# Build all packages
+yarn build
+
+# Run tests
+yarn test
+```
+
+## Components
+
+### Screen
+
+Config-driven screen renderer that dynamically loads the correct component based on device and screen key.
+
+```tsx
+import { Screen } from '@screegen/components';
+
+<Screen
+  config={config}
+  deviceKey="iphone"
+  screenKey="overview"
+  language="en-US"
+/>
+```
+
+### FeatureList
+
+Renders a list of features with icons.
+
+```tsx
+import { FeatureList } from '@screegen/components';
+
+<FeatureList
+  title="Features"
+  features={[
+    { title: 'Feature 1', description: 'Description', icon: 'star' }
+  ]}
+/>
+```
+
+### OverviewGrid
+
+Full-page overview with controls for language, scale, and color scheme.
+
+```tsx
+import { OverviewGrid } from '@screegen/components';
+
+<OverviewGrid
+  config={config}
+  language="en-US"
+  scale={0.5}
+  colorScheme="light"
+  onLanguageChange={setLanguage}
+/>
+```
+
+### Hooks
+
+```tsx
+import { useColorScheme, useUrlState } from '@screegen/components';
+
+// Detect system color scheme
+const colorScheme = useColorScheme();
+
+// Manage state via URL parameters
+const [language, setLanguage] = useUrlState('language', 'en-US');
+```
+
+## Configuration
+
+Create a `screegen.config.ts` file:
+
+```typescript
+import { ProjectConfig } from '@screegen/components';
+import OverviewScreen from './src/screens/Overview';
+import FeaturesScreen from './src/screens/Features';
+
+type AppLanguageCode = 'en-US' | 'de-DE';
+
+const config: ProjectConfig<AppLanguageCode> = {
+  languages: ['en-US', 'de-DE'],
+  devices: [
+    {
+      key: 'iphone',
+      fastlaneKeys: ['APP_IPHONE_67'],
+      width: 1290,
+      height: 2796,
+      screens: [
+        { key: 'overview', component: OverviewScreen },
+        { key: 'features', component: FeaturesScreen },
+      ],
+    },
+  ],
+};
+
+export default config;
+```
 
 ## License
 
-MIT License. See `LICENSE.txt` for more information.
-
-
-[build-shield]: https://img.shields.io/github/workflow/status/uebelack/snailmail-screenshot-generator/Build.svg?style=for-the-badge
-[build-url]: https://github.com/uebelack/snailmail-screenshot-generator/actions/workflows/ci.yaml
-[language-shield]: https://img.shields.io/github/languages/top/uebelack/snailmail-screenshot-generator.svg?style=for-the-badge
-[language-url]: https://github.com/uebelack/snailmail-screenshot-generator
-[coverage-shield]: https://img.shields.io/coveralls/github/uebelack/snailmail-screenshot-generator.svg?style=for-the-badge
-[coverage-url]: https://coveralls.io/github/uebelack/snailmail-screenshot-generator
-[license-shield]: https://img.shields.io/github/license/uebelack/snailmail-screenshot-generator.svg?style=for-the-badge
-[license-url]: https://github.com/uebelack/snailmail-screenshot-generator/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/david-übelacker-600262222
+MIT
