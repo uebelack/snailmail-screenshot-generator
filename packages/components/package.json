@@ -27,9 +27,13 @@
     "react-router-dom": "^6.0.0"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
     "@types/react": "^18.3.17",
     "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^25.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.2",
@@ -38,5 +42,10 @@
     "vite": "^6.0.0",
     "vite-plugin-dts": "^4.4.0",
     "vitest": "^2.1.0"
+  },
+  "dependenciesMeta": {
+    "@testing-library/jest-dom": {
+      "unplugged": true
+    }
   }
 }
