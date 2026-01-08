@@ -1,0 +1,21 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+}
+
+.featuresTitle {
+  text-align: center;
+  font-size: 88px;
+  font-weight: 400;
+  margin: 0 0 60px 0;
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+  margin-bottom: 120px;
+}
