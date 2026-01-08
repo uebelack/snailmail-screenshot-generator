@@ -1,11 +1,11 @@
-import { ComponentType } from 'react';
+import { ComponentType } from "react";
 
 /**
  * Color scheme for light/dark mode
  */
-export type ColorScheme = 'light' | 'dark';
+export type ColorScheme = "light" | "dark";
 
-export const colorSchemes: ColorScheme[] = ['light', 'dark'];
+export const colorSchemes: ColorScheme[] = ["light", "dark"];
 
 /**
  * A feature item with title, description, and icon

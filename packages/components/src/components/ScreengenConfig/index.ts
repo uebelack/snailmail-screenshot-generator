@@ -1,2 +1,2 @@
-export { ScreengenConfig } from './ScreengenConfig';
-export type { ScreengenConfigProps } from './ScreengenConfig';
+export { ScreengenConfig } from "./ScreengenConfig";
+export type { ScreengenConfigProps } from "./ScreengenConfig";

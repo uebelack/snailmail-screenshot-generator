@@ -1,2 +1,2 @@
-export { FeatureList } from './FeatureList';
-export type { FeatureListProps } from './FeatureList';
+export { FeatureList } from "./FeatureList";
+export type { FeatureListProps } from "./FeatureList";

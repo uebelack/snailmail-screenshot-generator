@@ -1,5 +1,5 @@
 // Base styles (fonts, resets)
-import './styles/base.scss';
+import "./styles/base.scss";
 
 // Types
 export type {
@@ -11,19 +11,19 @@ export type {
   DeviceConfig,
   ProjectConfig,
   ScreenProps as ScreenPropsType,
-} from './types';
-export { colorSchemes } from './types';
+} from "./types";
+export { colorSchemes } from "./types";
 
 // Hooks
-export { useColorScheme, getSystemColorScheme } from './hooks/useColorScheme';
-export { useUrlState } from './hooks/useUrlState';
+export { useColorScheme, getSystemColorScheme } from "./hooks/useColorScheme";
+export { useUrlState } from "./hooks/useUrlState";
 
 // Components
-export { Screen } from './components/Screen';
-export type { ScreenProps } from './components/Screen';
+export { Screen } from "./components/Screen";
+export type { ScreenProps } from "./components/Screen";
 
-export { OverviewGrid } from './components/OverviewGrid';
-export type { OverviewGridProps } from './components/OverviewGrid';
+export { OverviewGrid } from "./components/OverviewGrid";
+export type { OverviewGridProps } from "./components/OverviewGrid";
 
-export { ScreengenConfig } from './components/ScreengenConfig';
-export type { ScreengenConfigProps } from './components/ScreengenConfig';
+export { ScreengenConfig } from "./components/ScreengenConfig";
+export type { ScreengenConfigProps } from "./components/ScreengenConfig";
