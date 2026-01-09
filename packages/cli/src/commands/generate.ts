@@ -38,6 +38,7 @@ async function fetchConfig(
 
   const configText = await page.$eval(
     "#screegen-config",
+    /* v8 ignore next */
     (el) => el.textContent,
   );
   await page.close();
