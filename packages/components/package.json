@@ -19,7 +19,7 @@
     "dev": "vite build --watch",
     "build": "vite build",
     "lint": "eslint src",
-    "test": "vitest run"
+    "test": "vitest run --coverage"
   },
   "peerDependencies": {
     "react": "^18.0.0",
@@ -35,6 +35,7 @@
     "@typescript-eslint/eslint-plugin": "^8.52.0",
     "@typescript-eslint/parser": "^8.52.0",
     "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/coverage-v8": "^2.1.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",

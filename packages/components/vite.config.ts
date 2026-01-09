@@ -10,6 +10,13 @@ export default defineConfig({
       insertTypesEntry: true,
     }),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern',
+      },
+    },
+  },
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
